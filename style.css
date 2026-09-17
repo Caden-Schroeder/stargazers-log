@@ -1,0 +1,160 @@
+:root {
+  color: #17202a;
+  background: #f4f0e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: radial-gradient(circle at top right, #d8e8e1 0, transparent 32rem), #f4f0e8;
+}
+
+.page-shell {
+  width: min(100% - 2rem, 58rem);
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.page-header {
+  max-width: 42rem;
+  margin-bottom: 3.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #b14b35;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.page-header > p:last-child {
+  max-width: 30rem;
+  margin-bottom: 0;
+  color: #59605f;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px solid #17202a;
+  padding-bottom: 0.85rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.45rem;
+}
+
+.repository-count {
+  color: #59605f;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status {
+  color: #59605f;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.9rem;
+}
+
+.repository-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.repository-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 2rem;
+  border: 1px solid #c7c8bc;
+  border-left: 5px solid #b14b35;
+  padding: 1.35rem 1.5rem;
+  background: rgba(255, 253, 247, 0.7);
+}
+
+.repository-link {
+  color: #17202a;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.15em;
+}
+
+.repository-link:hover,
+.repository-link:focus-visible {
+  color: #b14b35;
+}
+
+.repository-description {
+  margin: 0.55rem 0 0;
+  color: #59605f;
+  line-height: 1.45;
+}
+
+.repository-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: end;
+  gap: 0.75rem;
+  color: #59605f;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 0.82rem;
+  text-align: right;
+}
+
+.language::before {
+  content: "";
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: #3f7f72;
+}
+
+@media (max-width: 600px) {
+  .page-shell {
+    padding: 3rem 0;
+  }
+
+  .repository-item {
+    grid-template-columns: 1fr;
+  }
+
+  .repository-meta {
+    justify-content: start;
+    text-align: left;
+  }
+}

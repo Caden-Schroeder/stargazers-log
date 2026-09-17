@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Astro",
+    "description": "The web framework for content-driven websites.",
+    "language": "TypeScript",
+    "stars": 49000,
+    "starredAt": "2026-09-12",
+    "url": "https://github.com/withastro/astro"
+  },
+  {
+    "name": "ripgrep",
+    "description": "A line-oriented search tool that recursively searches your current directory.",
+    "language": "Rust",
+    "stars": 57000,
+    "starredAt": "2026-09-08",
+    "url": "https://github.com/BurntSushi/ripgrep"
+  },
+  {
+    "name": "shadcn/ui",
+    "description": "Beautifully designed components that you can copy and paste into your apps.",
+    "language": "TypeScript",
+    "stars": 98000,
+    "starredAt": "2026-09-02",
+    "url": "https://github.com/shadcn-ui/ui"
+  },
+  {
+    "name": "The Algorithms - Python",
+    "description": "All algorithms implemented in Python.",
+    "language": "Python",
+    "stars": 195000,
+    "starredAt": "2026-08-26",
+    "url": "https://github.com/TheAlgorithms/Python"
+  }
+]
